@@ -81,7 +81,7 @@
             <!--<a href="mailto:name@email.com"></a>-->
           </div>
           <p class="mb-3">
-          	<iframe id="video" width="840" height="470" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+          	<iframe id="video" width="840" height="470" src="https://www.youtube.com/embed/5AocL4zQl0w" frameborder="0" allowfullscreen></iframe>
 		  </p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
@@ -169,7 +169,7 @@
             <div class="resume-content mr-auto">
               <div class="subheading mb-3">Public Schools Statewide Report</div>
               <div>
-              	<object data=http://profiles.doe.mass.edu/state_report/ width="1000" height="400"> <embed src=http://profiles.doe.mass.edu/state_report/ width="840" height="400"> </embed> Error: Embedded data could not be displayed. </object>
+              	<object data=https://profiles.doe.mass.edu/state_report/ width="1000" height="400"> <embed src=https://profiles.doe.mass.edu/state_report/ width="840" height="400"> </embed> Error: Embedded data could not be displayed. </object>
               </div>
               <div class="subheading mb-3"></div>
               <p>New datasets containing everything from graduation rates and MCAS scores to per-pupil expenditures and staff retention, this database provides valuable information that we can use to decode the vast and complex public school system.</p>
@@ -272,6 +272,13 @@
       	  <p>The collinearity is not as strong as in the SAT measure.</p>
 		  <img class="img-fluid" width="800" height="600" src="img/lm_mcas_mcas.png" alt="">
 
+		  <p>Instead of utilizing all of the SAT and MCAS measures, we'll just use the SAT Math performance to proxy the rest, because of the relationships that we've observed.</p>
+		  <p>In fact, given this relationship between exam performance and Four Year College Enrollment, a summary of the relationship between School Type and exam performance demonstrates that Non-Traditional School Four Year College Enrollment might be resultant of exam performance. </p>
+		  <img class="img-fluid" width="600" height="700" src="img/hist_sat_type.png" alt="">
+		  <br>
+		  <p>Comparing the findings with this table that we produced previously, we have now revealed consistent associations between Economic Disadvantage and School Type, School Type and Exam Performance, and finally Exam Performance and Four Year College Enrollment. </p>
+		  <img class="img-fluid" width="500" height="250" src="img/table_college_type.png" alt="">
+
         </div>
       </section>
 
@@ -317,7 +324,7 @@
       	  <p><img class="img-fluid" width="350" height="180" src="img/table_residual_type.png" alt=""></p>
       	  <p>Some valuable insights can be drawn here: 
       	  	<ul>
-      	  		<li>Traditional Public Schools with low prevalence of Economic Disadvantage (see the grouping where Economic Disadvantage prevalence <10%) produce some of the greatest proportions of graduates who will enroll into Four-Year Colleges. The response in this cluser of Public Schools has small variance.</li>
+      	  		<li>Traditional Public Schools with low prevalence of Economic Disadvantage (see the grouping where Economic Disadvantage prevalence <10%) produce some of the greatest proportions of graduates who will enroll into Four-Year Colleges. The response in this cluster of Public Schools has small variance.</li>
       	  		<li>Compared to Traditional Public Schools with similar prevalence of Economic Disadvantage, the Non-Traditional Public Schools produce a greater proportion of graduates who will enroll into Four-Year Colleges overall, at the cost of more variance.</li>
       	  		<li>Compared to Traditional Public Schools with low prevalence of Economic Disadvantage, almost all Non-Traditional Public Schools produce a smaller proportion of graduates who will enroll into Four-Year Colleges, with exception of the Public Exam Schools.</li>
       	  	</ul>	
@@ -344,9 +351,9 @@
           		<li>MassHealth (Medicaid)</li>
           	  </ul>
           	</p>
-          	<p>Every school Type observes reduced Four-Year College Enrollment with increased Economic Disadvantage.</p>
-          	<p>All of the Traditional Public Schools with low prevalence of Economic Disadvantage send a very high proportion of their graduates to Four-Year Colleges.</p>
-          	<p>Non-Traditional Public Schools vary greatly in their Four-Year College Enrollment, but often perform better than Traditional Public Schools that have similar Economic Disadvantage.</p>
+          	<p>Within School Types, schools observe reduced Four-Year College Enrollment coincident with increasing Economic Disadvantage.</p>
+          	<p>All of the Traditional Public Schools with low prevalence of Economic Disadvantage send a very high proportion of their graduates to Four-Year Colleges with little variance.</p>
+          	<p>Non-Traditional Public Schools vary greatly in their Four-Year College Enrollment, but often perform better than Traditional Public Schools that have similar Economic Disadvantage, especially at higher rates of Economic Disadvantage.</p>
 
         </div>
       </section>
