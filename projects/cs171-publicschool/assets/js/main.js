@@ -126,12 +126,12 @@ function createVis3(){
     // Parse Teacher Data
     school_data_15_16.forEach(function(row){
         // https://nelsonslog.wordpress.com/2014/04/24/d3-js-using-csv-for-numbers/
-        row["Average Salary"] = row["Average Salary"].trim().substring(1);
-        row["Salary Totals"] = row["Salary Totals"].trim().substring(1);
+        row["Average Salary"] = row["Average Salary"].trim();
+        row["Salary Totals"] = row["Salary Totals"].trim();
         let r = {};
         for (let k in row) {
             //console.log(row);
-            row["Average Salary"] = row["Average Salary"].replace(/,/g, "");
+            row["Average Salary"] = row["Average Salary"];
             r[k] = +row[k];
             if (isNaN(r[k])) {
                 r[k] = row[k];
@@ -143,7 +143,7 @@ function createVis3(){
     // Parse interstate Data
     //console.log(state_salaries_15_16);
     state_salaries_15_16.forEach(function (row) {
-        row.avg = +(row["AVERAGE SALARY"].trim().substring(1).replace(/,/g, ""));
+        row.avg = +(row["AVERAGE SALARY"].trim());
     });
     interstateVis = new InterstateVis("interstate-vis", state_salaries_15_16);
     salaryVis = new SalaryVis("salary-vis", viz3_alldata);
@@ -181,7 +181,6 @@ function createVis4(){
         barVis.onSelectionChange(rangeStart.getFullYear(), rangeEnd.getFullYear());
         document.getElementById('range').innerHTML = " Showing data from <b>" + rangeStart.getFullYear() + "</b> through <b>" + rangeEnd.getFullYear() + "</b>";
     })
-
 }
 
 
