@@ -1,0 +1,165 @@
+#select-box {
+    width: 300px;
+    padding: 5px;
+}
+
+.callToAction {
+    background-color: #e97770;
+}
+
+h3 {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#rectangles {
+    margin: 25px 50px 0 50px;
+}
+
+#select-box2 {
+    width: 400px;
+}
+
+#select {
+    margin: 25px 0 auto 125px;
+}
+
+.style4 p {
+    margin: 0 100px;
+    color: #1f232b;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+.style1 h4 {
+    font-size: 18px;
+}
+
+#highlights2 .highlight {
+    text-align: center;
+}
+
+#highlights2 .highlight h3 {
+    color: #e97770;
+    margin: 0 0 0.75em 0;
+    font-size: 1.15em;
+    letter-spacing: 0.05em;
+}
+
+.legend-text {
+    font-size: 14px;
+    color: black;
+}
+
+
+#table_choropleth td {
+    border-bottom: 2px solid #ddd;
+    font-family: 'Raleway', sans-serif;
+    color: #202127;
+    font-size: 16px;
+    align: left;
+}
+
+#table_choropleth {
+    table-layout:fixed;
+    overflow: hidden;
+}
+
+.user-control {
+    width:300px;
+}
+
+.form-control {
+    color: #202127;
+}
+
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+.line.line-grad {
+    stroke: steelblue;
+}
+.line.line-college {
+     stroke: forestgreen;
+}
+.line.line-retention {
+    stroke: goldenrod;
+}
+
+.dot_grad {
+    fill: steelblue;
+}
+.dot_college {
+    fill: forestgreen;
+}
+.dot_retention {
+    fill: goldenrod;
+}
+
+.chart_header {
+    font-size: 20px;
+    color: black;
+}
+
+.chart_caption {
+    font-size: 19px;
+    color: black;
+}
+
+.bar {
+    fill: lightblue;
+}
+
+.bar4_grad {
+    fill: steelblue;
+    stroke: lightgrey;
+}
+
+.bar4_college {
+	fill: forestgreen;
+    stroke: lightgrey;
+}
+
+.labels4_grad {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+}
+
+.labels4_college {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+}
+
+.axis {
+	font: 10px sans-serif;
+	fill: #333;
+}
+
+.axis-title {
+	fill: lightblue;
+	font-size: 11px;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #333;
+	shape-rendering: crispEdges;
+}
+
+.x-axis {
+	font-size: 12px;
+}
+
+.x-axis path {
+	display: none;
+}
+
+#main {
+    background-color: #fff8f8;
+}

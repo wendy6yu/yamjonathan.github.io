@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>MA School System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/nouislider.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/edited.css" />
+
+	</head>
+
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Title -->
+					<div id="title">
+						<div id="logo">
+							<h1>THE MASSACHUSETTS<br> PUBLIC SCHOOL SYSTEM</h1>
+						</div>
+						<p id="subtext">a closer look</p>
+					</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li><a href="#intro">Introduction</a></li>
+								<li><a href="#main">Visualization 1</a></li>
+								<li><a href="#highlights">Visualization 2</a></li>
+								<li><a href="#main2">Visualization 3</a></li>
+								<li><a href="#highlights2">How to Help</a></li>
+							</ul>
+						</nav>
+				</section>
+
+
+
+			<!-- Intro -->
+				<section id="intro" class="wrapper style1">
+					<div class="title">Introduction</div>
+					<div class="container">
+						<p class="style2">
+							Massachusetts is currently considered to have<br class="mobile-hide" />
+							the best public school system in the country.
+						</p>
+						<p class="style1">A more detailed look, however, reveals various achievement gaps that still plague the system.
+						Continue scrolling to understand what these problems look like, who they effect, and how you can help close these gaps.</p>
+
+						<p class="style1">Student achievement can be measured according to several different standards. <br> Select the
+						achievement criteria you believe to be most important below:</p>
+						<select class="form-control" id="select-box">
+							<option value="graduation">Graduation Rate</option>
+							<option value="mcas">MCAS Scores</option>
+							<option value="college">Enrollment into College</option>
+						</select>
+					</div>
+				</section>
+
+
+			<!-- Vis 1 -->
+				<section id="main" class="wrapper style2">
+					<div class="title">Visualization no. 1</div>
+					<header class="style4">
+						<p>On average, Massachusetts students appear to outperform students of other states. On an
+						individual level, however, academic performance varies drastically. Here, we explore whether
+						or not student performance is correlated with certain categories.</p>
+					</header>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div id="rectangles"></div>
+							</div>
+							<div class="col-md-6">
+								<div id="select">Select form of student categorization below:<br>
+								<select class="form-control" id="select-box2">
+									<option value="gender">Gender</option>
+									<option value="ethnicity">Ethnicity</option>
+									<option value="ec_status">Economic Disadvantage Status</option>
+								</select>
+									<div id="#description"></div>
+								</div>
+
+								<div align="center">
+									<div id="bar-graph"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			<!-- Vis 2 -->
+				<section id="highlights" class="wrapper style3">
+					<div class="title">Visualization no. 2</div>
+                    <div class="container">
+                        <h4>Choropleth Visualization Title</h4>
+                        <h5>Caption</h5>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div id="map-area"></div>
+                            </div>
+                            <div class="col-md-5">
+                                <br><br>
+
+                                <div class="user-control">
+                                    <select id="school-category" class="form-control" onchange="updateChoropleth()">
+                                        <option value="Local School">  Local Schools  </option>
+                                        <option value="Independent Public">  Independent Public Schools  </option>
+                                        <option value="Regional Vocational Technical">  Regional Vocational-Technical Schools  </option>
+                                    </select>
+                                </div>
+                                <br>
+                                <table id="table_choropleth">
+                                    <colgroup>
+                                        <col class="columnA" width="120px"/>
+                                        <col class="columnB" width="300px"/>
+                                    </colgroup>
+                                    <tr>
+                                        <td class="row_label">District Name</td>
+                                        <td id="td_name" style="font-weight:bold"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row_label">Graduation Rate </td>
+                                        <td id="td_gradrate" style="font-weight:bold"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row_label">Avg SAT Reading </td>
+                                        <td id="td_SAT_reading" style="font-weight:bold"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row_label">Avg SAT Writing</td>
+                                        <td id="td_SAT_writing" style="font-weight:bold"> </td>
+                                    </tr>
+									<tr>
+										<td class="row_label">Avg SAT Math</td>
+										<td id="td_SAT_math" style="font-weight:bold"> </td>
+									</tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+				</section>
+
+			<!-- Vis 3 -->
+				<section id="main2" class="wrapper style2">
+					<div class="title">Visualization no. 3</div>
+					<div class="container">
+
+						<!-- Features -->
+						<section id="features">
+							<header class="style1">
+								<h2>How does MA teacher salary vary/compare to that of other states?</h2>
+								<p></p>
+							</header>
+						</section>
+
+						<div class="row">
+							<div class="col-md-12">
+								<br>
+								<h4>Select a Salary</h4>
+								<div id="slider"></div>
+								<br>
+								<br>
+								<br>
+								<div id="school-name"></div>
+								Here's how student's there performed:
+								<div id="salary-vis"></div>
+								Here's how that stacks up against the rest of the country:
+								<div id="interstate-vis"></div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+			<!-- Vis 4 -->
+			<section id="main3" class="wrapper style3">
+				<div class="title">Visualization no. 4</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+                            <p class="chart_header">Brush the timeline to see outcomes over different periods of time:</p>
+							<div id="countvis"></div>
+						</div>
+						<div class="col-md-6">
+                            <br><br>
+                            <!--<p id="range">Showing data from <b>2011</b> through <b>2016</b></p>-->
+                            <div id="barvis"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to Action -->
+			<section id="highlights2" class="wrapper style2 callToAction">
+				<div class="title">How can you help?</div>
+				<div class="container">
+					<div class="row aln-center">
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<img src="images/parent-teacher.jpg" height="200px" class="image featured"/>
+								<h3><a href="#">Join your local PTA</a></h3>
+								<p>Description</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<img src="images/letter.jpg" height="200px" class="image featured"/>
+								<h3><a href="#">Write to your city hall</a></h3>
+								<p>Description</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<img src="images/vote.jpg" height="200px" class="image featured"/>
+								<h3><a href="#">Vote for your school budget</a></h3>
+								<p>Description</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+
+
+			</section>
+
+			<!-- Credits -->
+				<section id="footer" class="wrapper">
+					<div class="title">Credits</div>
+					<div class="container">
+						<header class="style1">
+							<h4>Brought to you by: Jonathan Yam, Zachary Buttenwieser, and Wendy Yu</h4>
+							<p>
+								Other sources used:
+							</p>
+						</header>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
+			<script src="assets/js/d3.min.js"></script>
+		    <script src="assets/js/queue.min.js"></script>
+		    <script src="assets/js/topojson.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/vis1main.js"></script>
+            <script src="assets/js/vis-choropleth.js"></script>
+			<script src="assets/js/countvis.js"></script>
+			<script src="assets/js/barvis.js"></script>
+			<script src="assets/js/nouislider.min.js"></script>
+			<script src="assets/js/salaryVis.js"></script>
+			<script src="assets/js/interstateVis.js"></script>
+			<script src="assets/js/vis1barchart.js"></script>
+	</body>
+</html>
