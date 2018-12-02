@@ -143,7 +143,7 @@ function createVis3(){
     // Parse interstate Data
     //console.log(state_salaries_15_16);
     state_salaries_15_16.forEach(function (row) {
-        row.avg = +(row["AVERAGE SALARY"].trim());
+        row.avg = +(row["AVERAGE SALARY"].trim().substring(1).replace(/,/g, ""));
     });
     interstateVis = new InterstateVis("interstate-vis", state_salaries_15_16);
     salaryVis = new SalaryVis("salary-vis", viz3_alldata);
