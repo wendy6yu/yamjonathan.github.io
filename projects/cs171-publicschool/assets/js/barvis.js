@@ -27,7 +27,7 @@ BarVis.prototype.initVis = function(){
     vis.filteredIndexes = [0,1,2,3,4,5];
 
     vis.margin = { top: 30, right: 0, bottom: 80, left: 60 };
-    vis.width = 600 - vis.margin.left - vis.margin.right;
+    vis.width = 500 - vis.margin.left - vis.margin.right;
     vis.height = 440 - vis.margin.top - vis.margin.bottom;
 
     // SVG drawing area
@@ -64,26 +64,26 @@ BarVis.prototype.initVis = function(){
 
     // Legend
     vis.svg.append("rect")
-        .attr("x", 100)
+        .attr("x", 40)
         .attr("y", 395)
         .attr("width", 16)
         .attr("height", 16)
         .attr("class", "legend-rect")
         .style("fill", "steelblue");
     vis.svg.append("text")
-        .attr("x", 120)
+        .attr("x", 60)
         .attr("y", 395+12)
         .attr("class", "legend-text")
         .text("Grad Rate");
     vis.svg.append("rect")
-        .attr("x", 230)
+        .attr("x", 160)
         .attr("y", 395)
         .attr("width", 16)
         .attr("height", 16)
         .attr("class", "legend-rect")
         .style("fill", "forestgreen");
     vis.svg.append("text")
-        .attr("x", 250)
+        .attr("x", 180)
         .attr("y", 395+12)
         .attr("class", "legend-text")
         .text("College/Univ. Matriculation");
@@ -215,7 +215,7 @@ BarVis.prototype.updateVis = function(){
         .merge(labels_grad)
         .transition()
         .attr("x", function(d, index){
-            return vis.x(index)+5;
+            return vis.x(index)+3;
         })
         .attr("y", function(d){
             return vis.y(d)+11;
@@ -233,7 +233,7 @@ BarVis.prototype.updateVis = function(){
         .merge(labels_college)
         .transition()
         .attr("x", function(d, index){
-            return vis.x(index)+33;
+            return vis.x(index)+24;
         })
         .attr("y", function(d){
             return vis.y(d)+11;

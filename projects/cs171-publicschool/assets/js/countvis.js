@@ -22,7 +22,7 @@ CountVis.prototype.initVis = function(){
     vis.data = joined_data;
 
     vis.margin = { top: 40, right: 40, bottom: 100, left: 60 };
-	vis.width = 550 - vis.margin.left - vis.margin.right;
+	vis.width = 500 - vis.margin.left - vis.margin.right;
 	vis.height = 400 - vis.margin.top - vis.margin.bottom;
 
 	// SVG drawing area
